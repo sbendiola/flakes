@@ -3,7 +3,7 @@ nixpkgs: system: let
     armOverlay = _: prev:
       let
         pkgsForx86 = import nixpkgs {
-          localSystem = "defaultPackage.x86_64-linux";
+          localSystem = "x86_64-darwin";
         };
       in
         prev.lib.optionalAttrs (prev.stdenv.isDarwin && prev.stdenv.isAarch64) {
