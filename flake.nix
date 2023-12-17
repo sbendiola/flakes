@@ -33,8 +33,7 @@
               sbt
               scala-cli
               scalafmt
-              nodejs
-              nodePackages
+              nodejs_21
             ];
           };
       in {
